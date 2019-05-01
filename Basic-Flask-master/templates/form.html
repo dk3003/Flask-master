@@ -1,0 +1,81 @@
+
+<html lang="en">
+<head>
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<style>
+		img {width:100%;}
+	</style>
+
+
+</head>
+<body>
+
+	<section class="testimonial py-5" id="testimonial">
+		<div class="container">
+			<div class="row ">
+				<div class="col-md-4 py-5 bg-primary text-white text-center ">
+					<div class=" ">
+						<div class="card-body">
+							<img src="http://www.ansonika.com/mavia/img/registration_bg.svg" style="width:30%">
+							<h2 class="py-3">Registration</h2>
+							<p>The Details you register here will be used for evaluation purpose,so please enter valid feedback or comment according to your issue.upload a corresponding image too.
+
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-8 py-5 border">
+					<h4 class="pb-4">Please fill with your details</h4>
+					<form action="/" method="POST">
+						
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								
+								<input id="Full Name" name="name" placeholder="Full Name(Firstname-Lastname)" class="form-control" type="text" required="required">
+							</div>
+							<div class="form-group col-md-6">
+								<input type="email" class="form-control" id="inputEmail4" placeholder="Email" name="email">
+							</div>
+						</div>
+						<div class="form-row">
+							<div class="form-group col-md-6">
+								<input id="Mobile No." name="mob-no" placeholder="Mobile No.(10 digit)" class="form-control" required="required" type="text" >
+							</div>
+							<div class="form-group col-md-6">
+								
+								<select id="inputState" class="form-control" name="role">
+									<option selected>Choose Role...</option>
+									<option> New Buyer</option>
+									<option> Auction</option>
+									<option> Complaint</option>
+									<option> Feedback</option>
+								</select>
+							</div>
+							<p>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" checked id="show" onclick="document.getElementById('comment').style.display='block';">Show Textarea
+								</label>
+								<label class="radio-inline">
+									<input type="radio" name="optradio" id="hide" onclick="  document.getElementById('comment').style.display='none';">Hide Textarea
+								</label>
+							</p>
+							<div class="form-group col-md-12" id="t">
+								<textarea id="comment" name="comment" cols="40" rows="5" class="form-control"></textarea>
+							</div>
+						</div>
+						
+						<div class="form-row">
+							<input type="submit" value="submit" class="btn btn-danger form-control"> 
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+
+</html>
